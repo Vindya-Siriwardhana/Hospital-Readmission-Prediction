@@ -222,7 +222,8 @@ The dashboard will open at `http://localhost:8501`
 *Upload patient data and generate risk predictions*
 
 ### Results Tab
-![Risk Distribution](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/tree/main/images/results_tab.png)
+![Risk Distribution](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/blob/main/images/results_tab.png.jpg)
+
 *View risk stratification and high-risk patient list*
 
 ### SHAP Explainability
