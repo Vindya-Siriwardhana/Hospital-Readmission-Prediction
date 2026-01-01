@@ -218,7 +218,7 @@ The dashboard will open at `http://localhost:8501`
 ## 🎨 Dashboard Demo
 
 ### Upload & Predict Tab
-![Dashboard Upload](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/tree/main/images/dashboard_demo.png)
+![Dashboard Upload](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/blob/main/images/dashboard_demo.png.jpg)
 *Upload patient data and generate risk predictions*
 
 ### Results Tab
