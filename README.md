@@ -7,8 +7,7 @@
 
 > **Explainable AI system for predicting 30-day hospital readmission risk with SHAP-based interpretability and interactive dashboard deployment**
 
-[🚀 Live Demo](https://your-app.streamlit.app) | [📊 Project Report](Hospital_Readmission_Research_Paper.pdf) | [💼 Portfolio](https://yourportfolio.com)
-
+[🚀 Live Demo](https://vindya-siriwardhana.streamlit.app/) | [📊 Project Report](Hospital_Readmission_Research_Paper.pdf) 
 ---
 
 ## 📋 Table of Contents
