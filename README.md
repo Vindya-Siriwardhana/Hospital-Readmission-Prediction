@@ -278,8 +278,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Vindya Siriwardhana**  
 Data Scientist | MSc Data Science (University of Essex) | MSc Applied Statistics (University of Colombo)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/vindya-siriwardhana/)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:your.asvindyaravi@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green)](https://yourportfolio.com)
 
 ---
