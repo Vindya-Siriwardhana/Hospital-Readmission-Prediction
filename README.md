@@ -41,6 +41,8 @@ Hospital readmissions within 30 days represent a critical challenge for healthca
 **Dataset:** 101,766 patient encounters from Diabetes 130-US Hospitals  
 **Target:** Binary classification of 30-day readmission (11.16% prevalence)
 
+**📥 Dataset Download:** The original dataset is too large for GitHub. Download from:  
+🔗 [UCI Machine Learning Repository - Diabetes 130-US Hospitals](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
 ---
 
 ## ⚡ Key Features
