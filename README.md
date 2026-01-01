@@ -228,6 +228,7 @@ The dashboard will open at `http://localhost:8501`
 
 ### SHAP Explainability
 ![SHAP Summary](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/blob/main/images/shap_summary.png.jpg)
+
 *Feature importance and individual patient explanations*
 
 ---
