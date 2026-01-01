@@ -280,7 +280,6 @@ Data Scientist | MSc Data Science (University of Essex) | MSc Applied Statistics
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/vindya-siriwardhana/)
 [![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:your.asvindyaravi@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green)](https://yourportfolio.com)
 
 ---
 
