@@ -11,9 +11,8 @@ import pickle
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import shap
-import matplotlib.pyplot as plt
-from io import BytesIO
+import os
+from pathlib import Path
 
 # Page configuration
 st.set_page_config(
@@ -65,9 +64,50 @@ st.markdown("""
 def load_model_artifacts():
     """Load trained model and preprocessing artifacts"""
     try:
-        # Updated paths
-        model_path = '/data/hospital_readmission_final_model.pkl'
-        data_path = '/data/hospital_readmission_prepared_data.pkl'
+        # Get the current directory
+        current_dir = Path(__file__).parent if "__file__" in globals() else Path.cwd()
+        
+        # Try multiple path combinations
+        base_paths = [
+            current_dir / "data",
+            Path("data"),
+            Path("./data"),
+            Path("../data"),
+        ]
+        
+        model_file = "hospital_readmission_final_model.pkl"
+        data_file = "hospital_readmission_prepared_data.pkl"
+        
+        model_path = None
+        data_path = None
+        
+        # Search for files
+        for base in base_paths:
+            potential_model = base / model_file
+            potential_data = base / data_file
+            
+            if potential_model.exists() and potential_data.exists():
+                model_path = potential_model
+                data_path = potential_data
+                break
+        
+        if model_path is None:
+            # Show debug info
+            st.error("❌ Model files not found!")
+            st.info(f"**Current directory:** {Path.cwd()}")
+            st.info(f"**Script location:** {current_dir}")
+            
+            # List available files
+            if Path("data").exists():
+                st.info(f"**Files in data/:** {list(Path('data').iterdir())}")
+            else:
+                st.warning("**data/ folder does not exist!**")
+                st.info(f"**Files in current dir:** {list(Path('.').iterdir())[:10]}")
+            
+            return None, None
+        
+        # Load the files
+        st.success(f"✅ Loading models from: {model_path.parent}")
         
         with open(model_path, 'rb') as f:
             model_artifacts = pickle.load(f)
@@ -76,9 +116,11 @@ def load_model_artifacts():
             data_artifacts = pickle.load(f)
         
         return model_artifacts, data_artifacts
+        
     except Exception as e:
-        st.error(f"Error loading model: {str(e)}")
-        st.info("Please ensure model files are in: C:/Users/USER/Desktop/Github Project/New folder/data/")
+        st.error(f"❌ Error loading model: {str(e)}")
+        import traceback
+        st.code(traceback.format_exc())
         return None, None
 
 # Feature engineering function
@@ -238,7 +280,8 @@ def main():
     model_artifacts, data_artifacts = load_model_artifacts()
     
     if model_artifacts is None or data_artifacts is None:
-        st.error("Failed to load model. Please check if model files exist.")
+        st.error("❌ Failed to load model. Please check if model files exist in the data/ folder.")
+        st.stop()
         return
     
     model = model_artifacts['model']
