@@ -227,7 +227,7 @@ The dashboard will open at `http://localhost:8501`
 *View risk stratification and high-risk patient list*
 
 ### SHAP Explainability
-![SHAP Summary](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/tree/main/images/shap_summary.png)
+![SHAP Summary](https://github.com/Vindya-Siriwardhana/Hospital-Readmission-Prediction/blob/main/images/shap_summary.png.jpg)
 *Feature importance and individual patient explanations*
 
 ---
