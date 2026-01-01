@@ -66,8 +66,8 @@ def load_model_artifacts():
     """Load trained model and preprocessing artifacts"""
     try:
         # Updated paths
-        model_path = 'C:/Users/USER/Desktop/Github Project/New folder/data/hospital_readmission_final_model.pkl'
-        data_path = 'C:/Users/USER/Desktop/Github Project/New folder/data/hospital_readmission_prepared_data.pkl'
+        model_path = '/data/hospital_readmission_final_model.pkl'
+        data_path = '/data/hospital_readmission_prepared_data.pkl'
         
         with open(model_path, 'rb') as f:
             model_artifacts = pickle.load(f)
